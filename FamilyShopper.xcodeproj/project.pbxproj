@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8839D9631F4256890005F1B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D9621F4256890005F1B8 /* AppDelegate.swift */; };
-		8839D9651F4256890005F1B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D9641F4256890005F1B8 /* ViewController.swift */; };
+		8839D9651F4256890005F1B8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D9641F4256890005F1B8 /* MainVC.swift */; };
 		8839D9681F4256890005F1B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8839D9661F4256890005F1B8 /* Main.storyboard */; };
 		8839D96A1F4256890005F1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8839D9691F4256890005F1B8 /* Assets.xcassets */; };
 		8839D96D1F4256890005F1B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8839D96B1F4256890005F1B8 /* LaunchScreen.storyboard */; };
 		8839D9781F4256890005F1B8 /* FamilyShopperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D9771F4256890005F1B8 /* FamilyShopperTests.swift */; };
 		8839D9831F4256890005F1B8 /* FamilyShopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D9821F4256890005F1B8 /* FamilyShopperUITests.swift */; };
+		8839D9951F42592F0005F1B8 /* CurrencyTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D9941F42592F0005F1B8 /* CurrencyTxtField.swift */; };
+		8839D9971F425FCD0005F1B8 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8839D9961F425FCD0005F1B8 /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		8839D95F1F4256890005F1B8 /* FamilyShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8839D9621F4256890005F1B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8839D9641F4256890005F1B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8839D9641F4256890005F1B8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		8839D9671F4256890005F1B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8839D9691F4256890005F1B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8839D96C1F4256890005F1B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		8839D97E1F4256890005F1B8 /* FamilyShopperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyShopperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8839D9821F4256890005F1B8 /* FamilyShopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyShopperUITests.swift; sourceTree = "<group>"; };
 		8839D9841F4256890005F1B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8839D9941F42592F0005F1B8 /* CurrencyTxtField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTxtField.swift; sourceTree = "<group>"; };
+		8839D9961F425FCD0005F1B8 /* Wage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		8839D9611F4256890005F1B8 /* FamilyShopper */ = {
 			isa = PBXGroup;
 			children = (
+				8839D9921F4257670005F1B8 /* Model */,
+				8839D9911F4257100005F1B8 /* Views */,
+				8839D9931F4257760005F1B8 /* Controller */,
 				8839D9621F4256890005F1B8 /* AppDelegate.swift */,
-				8839D9641F4256890005F1B8 /* ViewController.swift */,
 				8839D9661F4256890005F1B8 /* Main.storyboard */,
 				8839D9691F4256890005F1B8 /* Assets.xcassets */,
 				8839D96B1F4256890005F1B8 /* LaunchScreen.storyboard */,
@@ -123,6 +129,30 @@
 				8839D9841F4256890005F1B8 /* Info.plist */,
 			);
 			path = FamilyShopperUITests;
+			sourceTree = "<group>";
+		};
+		8839D9911F4257100005F1B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8839D9941F42592F0005F1B8 /* CurrencyTxtField.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8839D9921F4257670005F1B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8839D9961F425FCD0005F1B8 /* Wage.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8839D9931F4257760005F1B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8839D9641F4256890005F1B8 /* MainVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8839D9651F4256890005F1B8 /* ViewController.swift in Sources */,
+				8839D9951F42592F0005F1B8 /* CurrencyTxtField.swift in Sources */,
+				8839D9971F425FCD0005F1B8 /* Wage.swift in Sources */,
+				8839D9651F4256890005F1B8 /* MainVC.swift in Sources */,
 				8839D9631F4256890005F1B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ljubomir.FamilyShopper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -431,6 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ljubomir.FamilyShopper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -507,6 +541,7 @@
 				8839D9891F4256890005F1B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8839D98A1F4256890005F1B8 /* Build configuration list for PBXNativeTarget "FamilyShopperTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +550,7 @@
 				8839D98C1F4256890005F1B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8839D98D1F4256890005F1B8 /* Build configuration list for PBXNativeTarget "FamilyShopperUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +559,7 @@
 				8839D98F1F4256890005F1B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
