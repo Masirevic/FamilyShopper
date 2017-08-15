@@ -9,6 +9,7 @@
 import UIKit
 
 class CurrencyTxtField: UITextField {
+
     
     override func draw(_ rect: CGRect) {
         let size: CGFloat = 20
@@ -34,5 +35,7 @@ class CurrencyTxtField: UITextField {
     
         clipsToBounds = true
     }
+    
+    
 
 }
