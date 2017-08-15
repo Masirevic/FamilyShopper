@@ -101,8 +101,8 @@
 		8839D9611F4256890005F1B8 /* FamilyShopper */ = {
 			isa = PBXGroup;
 			children = (
-				8839D9921F4257670005F1B8 /* Model */,
 				8839D9911F4257100005F1B8 /* Views */,
+				8839D9921F4257670005F1B8 /* Model */,
 				8839D9931F4257760005F1B8 /* Controller */,
 				8839D9621F4256890005F1B8 /* AppDelegate.swift */,
 				8839D9661F4256890005F1B8 /* Main.storyboard */,

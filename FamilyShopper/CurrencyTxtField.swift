@@ -11,6 +11,15 @@ import UIKit
 class CurrencyTxtField: UITextField {
 
     
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.25)
+        layer.cornerRadius = 5.0
+        textAlignment = .center
+    
+}
+    
     override func draw(_ rect: CGRect) {
         let size: CGFloat = 20
         let currencyLbl = UILabel(frame: CGRect(x: 5, y: (frame.size.height / 2) - size / 2, width: size, height: size))
@@ -26,16 +35,6 @@ class CurrencyTxtField: UITextField {
         addSubview(currencyLbl)
     }
 
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.25)
-        layer.cornerRadius = 5.0
-        textAlignment = .center
-    
-        clipsToBounds = true
-    }
-    
     
 
 }
